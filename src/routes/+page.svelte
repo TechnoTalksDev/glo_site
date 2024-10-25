@@ -18,7 +18,6 @@
 
 </script>
 
-<input type="checkbox" bind:checked={animate} />
 
 {#if animate}
 <div id="top-blob" transition:blur = {{amount: 5, duration: 1500}} class="absolute top-[-15rem] left-0 right-0 ml-auto mr-auto w-[80vw] h-[20rem] rounded-[50%] bg-gradient-to-br from-surface-500 via-primary-500 to-white opacity-40 overflow-x-hidden blur-3xl" >

@@ -24,7 +24,7 @@
 </div>
 
 
-<div class="container h-screen w-auto mx-auto flex justify-center items-center text-center bg-black">
+<div class="container h-screen w-auto mx-auto flex justify-center items-center text-center bg-black overflow-visible " >
 	<div class="w-auto">
 		<!--
 			<h1 class="h1 text-[3in]">GLO</h1>
@@ -33,9 +33,9 @@
 		<span transition:fade = {{delay: 1000, duration: 1000}} class="scale-[80%] md:scale-[100%] badge w-fit variant-ghost px-6 py-2 text-lg text-[1rem] transition-shadow duration-300 hover:shadow-lg hover:shadow-[#ffffff80] select-none"><WandSparkles class="mr-2"/>Coming Soon</span>
 	</a>
 
-		<div class="relative w-auto" transition:blur = {{amount: 5, duration: 1500}}>
+		<div class="relative w-full max-w-none overflow-visible" transition:blur = {{amount: 5, duration: 1500}} style="-webkit-text-fill-color: transparent;">
 			
-			<h1 class="text-[15vw] md:text-[1.5in] gradient-hero leading-normal font-[bumbbled] whitespace-nowrap select-none">
+			<h1 class="text-[15vw] md:text-[1.5in] gradient-hero leading-normal font-[bumbbled] whitespace-nowrap select-none overflow-x-visible">
 				retrospective
 			</h1>
 
@@ -48,7 +48,7 @@
 
 
 		
-		<h2 transition:fade = {{delay: 750, duration: 500}} class="mt-4 tracking-tighter text-[6vw] md:text-3xl bg-gradient-to-b from-white via-white to-gray-500 inline-block text-transparent bg-clip-text font-extrabold text-center relative z-20">Built by students for <span class="gradient-hero">students</span></h2>
+		<h2 transition:fade = {{delay: 750, duration: 500}} class="overflow-visible mt-4 tracking-tighter text-[5vw] md:text-3xl bg-gradient-to-b from-white via-white to-gray-500 inline-block text-transparent bg-clip-text font-extrabold text-center relative z-20 leading-[1.3]  " style="-webkit-text-fill-color: transparent;">Built by students for <span class="gradient-hero">students</span></h2>
 		
 		<!--
 			Inspired by carbon.host
@@ -66,4 +66,14 @@
 	</div>
 </div>
 {/if}
+
+
+<style>
+/*
+* { 
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+*/
+</style>
 

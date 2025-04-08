@@ -9,6 +9,7 @@
 	} from 'svelte/transition';
 
 	import { onMount } from 'svelte';
+	import Particles from '$lib/Particles.svelte';
 
 	let animate = false
 
@@ -25,6 +26,7 @@
 
 
 <div class="container h-screen w-auto mx-auto flex justify-center items-center text-center bg-black overflow-visible " >
+	<Particles className="absolute inset-0 -z-5 opacity-50" refresh={true} staticity={30} quantity={250}/>
 	<div class="w-auto">
 		<!--
 			<h1 class="h1 text-[3in]">GLO</h1>
